@@ -23,13 +23,13 @@ button {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1240px;
   margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .menu-container {
-  max-width: 1200px;
-  margin: 0 auto;
   height: 100%;
 }
 
@@ -67,11 +67,12 @@ button {
 }
 
 .header__offer {
-  width: 493px;
+  max-width: 493px;
   font-family: "Ubuntu";
   font-weight: 700;
   font-size: 75px;
   line-height: 69px;
+  line-height: 92%;
   color: #ffffff;
   /* margin-top: 156px; */
   margin-bottom: 54px;
@@ -294,8 +295,8 @@ button {
 }
 
 .how-we-work {
-  margin-top: 70px;
-  margin-bottom: 90px;
+  padding-top: 70px;
+  padding-bottom: 90px;
 }
 
 .how-we-work__title {
@@ -387,7 +388,6 @@ textarea {
   box-shadow: 0px 2px 11px rgba(69, 65, 164, 0.06),
     0px 4px 10px rgba(31, 37, 89, 0.07);
   border-radius: 46px;
-  padding-left: 28px;
   border: none;
   outline: none;
   font-family: "Ubuntu";
@@ -403,9 +403,15 @@ textarea {
   margin-bottom: 70px;
 }
 
+input,
+textarea {
+  padding-left: 28px;
+}
+
 input::placeholder,
 textarea::placeholder {
   color: #acacac;
+  /* transform: translateX(28px); */
 }
 
 .input--name {

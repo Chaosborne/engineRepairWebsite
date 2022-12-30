@@ -7,13 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
     <title>Diesel</title>
 </head>
 
 <body>
     <header class="header">
         <div class="header__menu">
-            <div class="menu-container">
+            <div class="container menu-container">
                 <ul class="header__menu-list">
                     <li class="header__menu-list-item"><a class="header__menu-link" href="#">Наши услуги</a></li>
                     <li class="header__menu-list-item"><a class="header__menu-link" href="#">Цены</a></li>
@@ -22,6 +23,7 @@
                 </ul>
             </div>
         </div>
+    
         <div class="container">
             <div class="header__content">
                 <h1 class="header__offer"><span class="yellow">Ремонт двигателей</span><br>с гарантией</h1>
@@ -31,7 +33,7 @@
             </div>
         </div>
         <div class="header__info">
-            <div class="menu-container">
+            <div class="container menu-container">
                 <div class="header__info-items">
                     <div class="header__info-item">
                         <img class="info__item-img" src="/img/clock-icon.svg" alt="">
@@ -61,7 +63,7 @@
 
     <main>
         <section class="we-offer">
-            <div class="container">
+            <div class="container we-offer--mobile-container">
                 <h2 class="we-offer__title">Что <span class="yellow">мы предлагаем</span></h2>
                 <h3 class="we-offer__subtitle">полный цикл ремонта и поддержки</h3>
                 <div class="we-offer__3-row">
@@ -97,7 +99,7 @@
             </div>
         </section>
 
-        <section class="services">
+         <section class="services">
             <div class="container">
                 <h2 class="services__title">Услуги</h2>
                 <div class="services__inner">
@@ -138,8 +140,8 @@
                         <img class="how-we-work__item-img" src="/img/you_call.jpg" alt="">
                     </div>
                     <div class="how-we-work__item">
-                        <img class="how-we-work__item-img" src="/img/you_choose.jpg" alt="">
-                        <div class="how-we-work__item-info honest">
+                        <img class="how-we-work__item-img hww__item-img--order-2" src="/img/you_choose.jpg" alt="">
+                        <div class="how-we-work__item-info hww__item-info--order-1 honest">
                             <div class="how-we-work__item-number">2</div>
                             <div class="how-we-work__item-text">ВЫБИРАЕТЕ УСЛУГУ</div>
                         </div>
@@ -152,8 +154,8 @@
                         <img class="how-we-work__item-img" src="/img/you_drop.jpg" alt="">
                     </div>
                     <div class="how-we-work__item">
-                        <img class="how-we-work__item-img" src="/img/you_accept.jpg" alt="">
-                        <div class="how-we-work__item-info honest">
+                        <img class="how-we-work__item-img hww__item-img--order-2" src="/img/you_accept.jpg" alt="">
+                        <div class="how-we-work__item-info hww__item-info--order-1 honest">
                             <div class="how-we-work__item-number">4</div>
                             <div class="how-we-work__item-text">ПРИНИМАЕТЕ РАБОТУ</div>
                         </div>
@@ -176,7 +178,7 @@
         </section>
 
         <section class="engines">
-            <div class="container">
+            <div class="container engines__container--no-padding">
                 <div class="engine-items">
                     <div class="engine-item">
                         <img class="engine-img" src="img/engine_1.png" alt="">
@@ -199,7 +201,7 @@
                     <div class="engine-item">
                         <img class="engine-img" src="img/engine_2.png" alt="">
                         <table class="engines__table">
-                            <caption class="engine-title">Двигатель КАМАЗ 740.10</caption>
+                            <caption class="engine-title">Двигатель КАМАЗ 740.11</caption>
                             <tr>
                                 <td class="td--left">Новый:</td>
                                 <td class="td--right">от 596 150 руб.</td>
@@ -217,7 +219,7 @@
                     <div class="engine-item">
                         <img class="engine-img" src="img/engine_3.png" alt="">
                         <table class="engines__table">
-                            <caption class="engine-title">Двигатель КАМАЗ 740.10</caption>
+                            <caption class="engine-title">Двигатель CUMMINS</caption>
                             <tr>
                                 <td class="td--left">Новый:</td>
                                 <td class="td--right">от 811 450 руб.</td>
@@ -261,11 +263,11 @@
                         <tr><td><br></td></tr>
                         <tr><td colspan="2">ХОНИНГОВКА ЦИЛИНДРА ОТДЕЛЬНО 2/3 от стоимости Расточки</td></tr>
                     </table>
-                    <img src="img/price_1.png" alt="">
+                    <img class="price-table__img" src="img/price_1.png" alt="">
                 </div>
                 <div class="price-list__item">
-                    <img src="img/price_2.png" alt="">
-                    <table class="price-list__table">
+                    <img class="price-table__img price--2" src="img/price_2.png" alt="">
+                    <table class="price-list__table price--1">
                         <caption class="price-list__caption">РЕМОНТ ГБЦ</caption>
                         <tr><td>Рассухарить клапан легковые отечеств</td><td>25 за шт</td>
                         <tr><td>Засухарить клапан легковые отечеств</td><td>50 за шт</td>
@@ -322,11 +324,11 @@
                         <!-- hidden -->
 
                     </table>
-                    <img src="img/price_3.png" alt="">
+                    <img class="price-table__img" src="img/price_3.png" alt="">
                 </div>
                 <div class="price-list__item">
-                    <img src="img/price_4.png" alt="">
-                    <table class="price-list__table">
+                    <img class="price--2" src="img/price_4.png" alt="">
+                    <table class="price-list__table price--1">
                         <caption class="price-list__caption">ГИЛЬЗОВКА БЛОКОВ</caption>
                         <tr><td>Ока</td><td>3500</td></tr>
                         <tr><td>Ваз</td><td>6500</td></tr>
@@ -349,6 +351,7 @@
                         <tr><td>Легковые 3 ц</td><td>1200</td></tr>
                     </table>
                 </div>
+
                 <!-- hidden -->
                 <!-- <div class="price-list__item">
                     <table class="price-list__table">
@@ -371,9 +374,10 @@
                     <tr><td>Снятие шестеренки/ противовесов-</td><td></td></tr>
                     <tr><td>Шлифовка коленвала через размер </td><td></td></tr>
                     </table>
-                    <img src="img/price_5.png" alt="">
+                    <img class="price-table__img" src="img/price_5.png" alt="">
                 </div> -->
                 <!-- /hidden -->
+
             </div>
         </section>
 
@@ -386,7 +390,7 @@
                     <h4 class="form--phone">Телефон</h4>
                     <input class="input2--phone" type="text" placeholder="Номер вашего телефона">
                     <h4 class="form--message">Сообщение</h4>
-                    <textarea type="text" placeholder="Введите ваше сообщение"></textarea>
+                    <textarea class="input--phone" type="text" placeholder="Введите ваше сообщение"></textarea>
                     <button class="form__btn" type="submit">Отправить</button>
                 </form>
             </div>
