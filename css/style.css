@@ -37,6 +37,9 @@ button {
   /* height: 65vh; */
   background-image: url(/img/black_bg.jpg);
   padding-top: 156px;
+  background-size: cover;
+  background-repeat: no-repeat;
+
 }
 
 .header__menu {
@@ -111,7 +114,7 @@ button {
 .header__img {
   position: absolute;
   top: 156px;
-  right: 200px;
+  right: 10%;
 }
 
 .header__info {
@@ -427,6 +430,7 @@ textarea::placeholder {
 }
 
 .form__btn {
+  transform: translateX(14px);
   background: #fdb900;
   box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
   border-radius: 46px;
