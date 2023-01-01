@@ -317,8 +317,8 @@ button {
   gap: 20px;
 }
 
-.how-we-work__item {
-}
+/* .how-we-work__item {
+} */
 
 .how-we-work__item-info {
   display: flex;
@@ -611,5 +611,5 @@ footer {
   line-height: 14px;
 }
 
-.footer-right {
-}
+/* .footer-right {
+} */
