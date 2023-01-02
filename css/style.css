@@ -23,10 +23,8 @@ button {
 }
 
 .container {
-  max-width: 1240px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .menu-container {
@@ -35,11 +33,10 @@ button {
 
 .header {
   /* height: 65vh; */
-  background-image: url(/img/black_bg.jpg);
   padding-top: 156px;
+  background-image: url(/img/black_bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-
 }
 
 .header__menu {
@@ -613,3 +610,77 @@ footer {
 
 /* .footer-right {
 } */
+
+/* modal */
+.hidden {
+  display: none;
+}
+
+.modal-window {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  background-color: #fff;
+  padding: 5rem 50px;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.modal-window p {
+  font-size: 20px;
+  line-height: 1.4em;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+.close-modal {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 3rem;
+  color: #444;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.modal-window {
+  background: #d9d9d9;
+}
+
+.feedback__form--modal {
+  /* transform: translateX(16px); */
+}
+
+.form--name {
+}
+
+.input--name {
+}
+
+.form--phone {
+}
+
+.input2--phone {
+}
+
+.form--message {
+}
+
+.input--phone {
+}
+
+.form__btn {
+}

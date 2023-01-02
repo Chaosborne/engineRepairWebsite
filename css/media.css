@@ -1,6 +1,9 @@
 @media (max-width: 1200px) {
+  .container {
+    max-width: 90%;
+  }
   .header__container {
-    max-width: 700px;
+    max-width: 90%;
   }
   .header__img {
     display: none;
@@ -40,6 +43,7 @@
     margin-bottom: 30px;
   }
   .we-offer--mobile-container {
+    max-width: 100%;
     padding-left: 0px;
     padding-right: 0px;
   }
@@ -58,7 +62,7 @@
   }
 
   .services__container {
-    max-width: 700px;
+    max-width: 90%;
   }
   .services__inner {
     display: block;
@@ -111,9 +115,6 @@
     line-height: 110%;
     margin-bottom: 30px;
   }
-  /* .feedback__form {
-      width: 100%;
-    } */
   .input--name,
   .input--phone,
   .input2--phone,
@@ -260,6 +261,9 @@
   .how-we-work {
     padding-bottom: 70px;
   }
+  .how-we-work__container {
+    max-width: 90%;
+  }
   .how-we-work__title {
     line-height: 110%;
     margin-bottom: 30px;
@@ -284,6 +288,10 @@
   .honest {
     margin-top: 0;
     margin-bottom: 13px;
+  }
+
+  .engines__container {
+    max-width: 90%;
   }
 
   .feedback {
@@ -367,5 +375,9 @@
     width: 85%;
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  .close-modal {
+    right: 3rem;
   }
 }

@@ -28,10 +28,31 @@
             <div class="header__content">
                 <h1 class="header__offer"><span class="yellow">Ремонт двигателей</span><br>с гарантией</h1>
                 <div class="header__description">Дизельные, бензиновые, для грузовых и легковых автомобилей</div>
-                <button class="order__btn">Заказать!</button>
+                <button class="order__btn show-modal-btn">Заказать!</button>
                 <img src="/img/header_engine.png" alt="" class="header__img">
             </div>
         </div>
+
+        <!-- modal -->
+            <div class="modal-window hidden">
+                <button class="close-modal">&times;</button>
+
+
+                <form class="feedback__form feedback__form--modal" action="">
+                    <h4 class="form--name">Имя</h4>
+                    <input class="input--name" type="text" placeholder="Ваше имя">
+                    <h4 class="form--phone">Телефон</h4>
+                    <input class="input2--phone" type="text" placeholder="Номер вашего телефона">
+                    <h4 class="form--message">Сообщение</h4>
+                    <textarea class="input--phone" type="text" placeholder="Введите ваше сообщение"></textarea>
+                    <button class="form__btn" type="submit">Отправить</button>
+                </form>
+
+
+            </div>
+            <div class="overlay hidden"></div>
+        <!-- /modal -->
+          
         <div class="header__info">
             <div class="container menu-container header__container">
                 <div class="header__info-items">
@@ -395,6 +416,7 @@
                 </form>
             </div>
         </section>
+          
     </main>
 
     <footer>
@@ -415,6 +437,7 @@
         </div>
     </footer>
 
+    <script src="/js/modal.js"></script>
 </body>
 
 </html>
