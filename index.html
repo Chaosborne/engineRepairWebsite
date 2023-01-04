@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header id="scroll-top" class="header">
         <div class="header__menu">
             <div class="container menu-container">
                 <ul class="header__menu-list">
@@ -24,6 +24,9 @@
         </div>
     
         <div class="container header__container">
+            <a id="top-scroller" class="hidden" href="#scroll-top">
+                <img src="/img/top-scroller.svg" alt="">
+            </a>
             <div class="header__content">
                 <h1 class="header__offer"><span class="yellow">Ремонт двигателей</span><br>с гарантией</h1>
                 <div class="header__description">Дизельные, бензиновые, для грузовых и легковых автомобилей</div>
@@ -433,6 +436,7 @@
     </footer>
 
     <script src="/js/modal.js"></script>
+    <script src="/js/topScroll.js"></script>
 </body>
 
 </html>

@@ -9,6 +9,7 @@ html {
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
   color: #222222;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -37,6 +38,13 @@ button {
   background-image: url(/img/black_bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+#top-scroller {
+  z-index: 2;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
 }
 
 .header__menu {
