@@ -30,6 +30,10 @@ button {
 
 .menu-container {
   height: 100%;
+}
+
+.top__menu-items {
+  height: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -43,7 +47,7 @@ button {
 }
 
 #top-scroller {
-  z-index: 3;
+  z-index: 4;
   position: fixed;
   right: 30px;
   bottom: 30px;
@@ -51,12 +55,12 @@ button {
 
 .header__menu {
   width: 100%;
-  background-color: #4f3a00;
+  background-color: #4F3A00;
   height: 70px;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 3;
 }
 
 .header__menu-list {
@@ -65,10 +69,6 @@ button {
   justify-content: start;
   align-items: center;
   gap: 40px;
-}
-
-.header__menu-list--left {
-  /* media hidden under 500px */
 }
 
 .header__menu-list--burger {
@@ -86,6 +86,10 @@ button {
   font-size: 15px;
   line-height: 18px;
   color: #ffffff;
+}
+
+.header-menu__phone {
+  font-size: 18px;
 }
 
 .header__offer {
@@ -132,7 +136,7 @@ button {
 
 .header__img {
   position: absolute;
-  top: 156px;
+  top: 170px;
   right: 10%;
 }
 
@@ -141,9 +145,6 @@ button {
   background: #ffffff;
   height: 113px;
   box-shadow: 0px 4px 27px 5px rgba(0, 0, 0, 0.16);
-  /* position: fixed;
-  bottom: 0;
-  left: 0; */
 }
 
 .header__info-items {
@@ -335,9 +336,6 @@ button {
   display: flex;
   gap: 20px;
 }
-
-/* .how-we-work__item {
-} */
 
 .how-we-work__item-info {
   display: flex;
@@ -578,7 +576,7 @@ textarea::placeholder {
 /* write__us section styles are in feedback claster */
 
 footer {
-  background: #4f4f4f;
+  background: #3f3f3f;
   font-family: "Ubuntu";
   font-weight: 400;
   font-size: 20px;

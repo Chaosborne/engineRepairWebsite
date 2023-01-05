@@ -390,23 +390,28 @@
   .header__menu-list--burger {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 35px;
     position: fixed;
     top: 0;
     left: -500px;
     height: 100vh;
-    padding: 100px 90px 0 20px;
+    padding: 23px 90px 0 20px;
     background-color: #4F3A00;
+    z-index: 2;
   }
   .header__menu-list--burger a {
     font-size: 22px;
   }
   .header__menu-list--burger-shown {
     left: 0;
+    transition: left  0.5s;
   }
   .burger-btn {
     display: block;
     width: 30px;
     z-index: 1;
+  }
+  .burger-btn--close {
+    width: 25px;
   }
 }
