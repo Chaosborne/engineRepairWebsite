@@ -1,7 +1,6 @@
 <?php
-    $mails = 'kolbasnikov@list.ru, rustemshagitov@gmail.com'
+    $mails = 'kolbasnikov@list.ru, rustemshagitov@gmail.com';
     $url = $_POST['form--url']; // скрытое поле ботов
-    
 
     if ($url === NULL) {
         if (isset($_POST['form--name'])) {
