@@ -17,7 +17,7 @@
             $subject .= ' - запросил обрытный звонок';
         }
         
-        mail($mails, $tema, $message)
+        mail($mails, $tema, $message);
 
     } else {
         echo 'Спасибо, вы определены в петушиный угол';
