@@ -381,3 +381,32 @@
     right: 3rem;
   }
 }
+
+/* burger menu */
+@media (max-width: 500px) {
+  .header__menu-list--left {
+    display: none;
+  }
+  .header__menu-list--burger {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    position: fixed;
+    top: 0;
+    left: -500px;
+    height: 100vh;
+    padding: 100px 90px 0 20px;
+    background-color: #4F3A00;
+  }
+  .header__menu-list--burger a {
+    font-size: 22px;
+  }
+  .header__menu-list--burger-shown {
+    left: 0;
+  }
+  .burger-btn {
+    display: block;
+    width: 30px;
+    z-index: 1;
+  }
+}
