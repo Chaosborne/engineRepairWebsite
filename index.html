@@ -15,23 +15,34 @@
     <header id="scroll-top" class="header">
         <div class="header__menu">
             <div class="container menu-container">
-                <ul class="header__menu-list">
+                <ul class="header__menu-list header__menu-list--left">
                     <li class="header__menu-list-item"><a class="header__menu-link" href="#we-offer">Наши услуги</a></li>
                     <li class="header__menu-list-item"><a class="header__menu-link" href="#price-list">Цены</a></li>
                     <li class="header__menu-list-item"><a class="header__menu-link" href="#footer">Контакты</a></li>
+                </ul>
+                <img class="burger-btn" src="/img/burger.svg" alt="">
+                <!-- burger  -->
+                <ul class="header__menu-list--burger">
+                    <li class="header__menu-list-item"><a class="header__menu-link" href="#we-offer">Наши услуги</a></li>
+                    <li class="header__menu-list-item"><a class="header__menu-link" href="#price-list">Цены</a></li>
+                    <li class="header__menu-list-item"><a class="header__menu-link" href="#footer">Контакты</a></li>
+                </ul>
+                <!-- /burger  -->
+                <ul class="header__menu-list">
+                    <li class="header__menu-list-item"><a href="tel:+71234567890">+7 (123) 456 78 90</a></li>
                 </ul>
             </div>
         </div>
     
         <div class="container header__container">
             <a id="top-scroller" class="hidden" href="#scroll-top">
-                <img src="/img/top-scroller.svg" alt="">
+                <img src="img/top-scroller.svg" alt="">
             </a>
             <div class="header__content">
                 <h1 class="header__offer"><span class="yellow">Ремонт двигателей</span><br>с гарантией</h1>
                 <div class="header__description">Дизельные, бензиновые, для грузовых и легковых автомобилей</div>
                 <button class="order__btn show-modal-btn">Заказать!</button>
-                <img src="/img/header_engine.png" alt="" class="header__img">
+                <img src="img/header_engine.png" alt="" class="header__img">
             </div>
         </div>
 
@@ -57,21 +68,21 @@
             <div class="container menu-container header__container">
                 <div class="header__info-items">
                     <div class="header__info-item">
-                        <img class="info__item-img" src="/img/clock-icon.svg" alt="">
+                        <img class="info__item-img" src="img/clock-icon.svg" alt="">
                         <div class="info__item-content">
                             <h2 class="info__item-header">Мы открыты Пн - Пт</h2>
                             <div class="info__item-detail">08:00 - 18:00</div>
                         </div>
                     </div>
                     <div class="header__info-item">
-                        <img class="info__item-img" src="/img/phone_icon.svg" alt="">
+                        <img class="info__item-img" src="img/phone_icon.svg" alt="">
                         <div class="info__item-content">
                             <h2 class="info__item-header">Позвоните нам</h2>
                             <div class="info__item-detail">+7 123 45 67 89</div>
                         </div>
                     </div>
                     <div class="header__info-item">
-                        <img class="info__item-img" src="/img/address_icon.svg" alt="">
+                        <img class="info__item-img" src="img/address_icon.svg" alt="">
                         <div class="info__item-content">
                             <h3 class="info__item-header">Наш адрес</h2>
                                 <div class="info__item-detail">г. Казань, ул. Уличная, д. 1</div>
@@ -95,7 +106,7 @@
                         <div class="we-offer__service-watermark we-offer__service-watermark--yellow">Обслуживание</div>
                     </div>
                     <div class="we-offer__img">
-                        <img src="/img/we-offer__oil.jpg" alt="">
+                        <img src="img/we-offer__oil.jpg" alt="">
                     </div>
                     <div class="we-offer__service we-offer__bg--light-gray">
                         <div class="we-offer__service-title">Капитальный<br> ремонт</div>
@@ -106,7 +117,7 @@
                 </div>
                 <div class="we-offer__3-row">
                     <div class="we-offer__img">
-                        <img src="/img/comp_diag.jpg" alt="">
+                        <img src="img/comp_diag.jpg" alt="">
                     </div>
                     <div class="we-offer__service we-offer__bg--dark-gray">
                         <div class="we-offer__service-title yellow">Компьютерная<br> диагностика</div>
@@ -114,7 +125,7 @@
                         <div class="we-offer__service-watermark we-offer__service-watermark--dark-gray">Диагностика</div>
                     </div>
                     <div class="we-offer__img">
-                        <img src="/img/engine.jpg" alt="">
+                        <img src="img/engine.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -427,7 +438,7 @@
         <div class="footer__inner">
             <div class="footer-left">
                 <div class="footer__title"><span class="yellow">Ремонт двигателей</span><br>с гарантией</div>
-                <div class="footer__contact-info">+7 123 456 78 90</div>
+                <div class="footer__contact-info"><a href="tel:+71234567890">+7 (123) 456 78 90</a></div>
                 <div class="footer__contact-info">mail@mail.com</div>
                 <div class="footer__contact-info">г. Казань, ул. Уличная, д. 1</div>
                 <div class="footer__contact-info footer__contact-info--last">08:00 - 18:00</div>
@@ -443,6 +454,7 @@
 
     <script src="/js/modal.js"></script>
     <script src="/js/topScroll.js"></script>
+    <script src="/js/burger.js"></script>
 </body>
 
 </html>
