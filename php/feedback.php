@@ -9,7 +9,7 @@
             $name = $_POST['input--name'];
             if (isset($_POST['input--phone'])) {
                 $phone = $_POST['input--phone'];
-                $message = $name . ' оставил заявку на обратный звонок<br>Телефон: ' . $phone;
+                $message = $name . ' оставил заявку на обратный звонок<br>Телефон: <a href="tel:'. $phone . '">' . $phone . '</a>';
             }
         }
 
@@ -19,9 +19,9 @@
             $message = $_POST['textarea'] . '<br>Телефон: ' . $phone;
             $subject .= ' - запросил обрытный звонок';
         }
-        var_dump($_POST['input--phone']);
+        
         mail($mails, $subject, $message, $headers);
-        echo 'Спасибо' .$name. '. Ваша заявка отправлена';
+        echo 'Спасибо, ' .$name. '. Ваша заявка отправлена';
 
     } else {
         echo 'Спасибо, вы определены в петушиный угол';
