@@ -1,4 +1,32 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+
+.modal-window {
+  z-index: 21;
+}
+.feedback-overlay {
+  z-index: 20;
+}
+
+
+.header__menu-list--burger {
+  z-index: 14;
+}
+.burger-overlay {
+  z-index: 12;
+}
+.header__menu {
+  z-index: 10;
+}
+
+
+#top-scroller {
+  z-index: 2;
+}
+
+
+
+
 
 * {
   margin: 0;
@@ -7,7 +35,7 @@
 
 html {
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   color: #222222;
   scroll-behavior: smooth;
 }
@@ -47,7 +75,6 @@ button {
 }
 
 #top-scroller {
-  z-index: 4;
   position: fixed;
   right: 30px;
   bottom: 30px;
@@ -55,12 +82,11 @@ button {
 
 .header__menu {
   width: 100%;
-  background-color: #4F3A00;
+  background-color: #4f3a00;
   height: 70px;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 3;
 }
 
 .header__menu-list {
@@ -71,17 +97,15 @@ button {
   gap: 40px;
 }
 
-.header__menu-list--burger {
-  display: none;
-}
-
+.header__menu-list--burger,
+.burger-overlay,
 .burger-btn {
   display: none;
 }
 
 .header__menu-list-item {
   display: block;
-  font-family: "Ubuntu";
+  font-family: 'Ubuntu';
   font-weight: 400;
   font-size: 15px;
   line-height: 18px;
@@ -94,7 +118,7 @@ button {
 
 .header__offer {
   max-width: 493px;
-  font-family: "Ubuntu";
+  font-family: 'Ubuntu';
   font-weight: 700;
   font-size: 75px;
   line-height: 69px;
@@ -114,7 +138,7 @@ button {
 
 .header__description {
   width: 432px;
-  font-family: "Ubuntu";
+  font-family: 'Ubuntu';
   font-weight: 400;
   font-size: 25px;
   line-height: 29px;
@@ -127,7 +151,7 @@ button {
   height: 50px;
   background: #fdb900;
   border-radius: 7px;
-  font-family: "Ubuntu";
+  font-family: 'Ubuntu';
   font-weight: 400;
   font-size: 20px;
   line-height: 23px;
@@ -172,7 +196,7 @@ button {
 }
 
 .info__item-header {
-  font-family: "Ubuntu";
+  font-family: 'Ubuntu';
   font-weight: 400;
   font-size: 13px;
   line-height: 15px;
@@ -180,7 +204,7 @@ button {
 }
 
 .info__item-detail {
-  font-family: "Ubuntu";
+  font-family: 'Ubuntu';
   font-weight: 500;
   font-size: 21px;
   line-height: 24px;
@@ -191,7 +215,7 @@ button {
   padding-bottom: 90px;
 }
 .we-offer__title {
-  font-family: "Ubuntu";
+  font-family: 'Ubuntu';
   font-weight: 700;
   font-size: 45px;
   line-height: 69px;
@@ -200,7 +224,7 @@ button {
 }
 
 .we-offer__subtitle {
-  font-family: "Ubuntu";
+  font-family: 'Ubuntu';
   font-weight: 300;
   font-size: 17px;
   line-height: 20px;
@@ -225,7 +249,7 @@ button {
 }
 
 .we-offer__service-title {
-  font-family: "Ubuntu";
+  font-family: 'Ubuntu';
   font-weight: 500;
   font-size: 34px;
   line-height: 130%;
@@ -234,7 +258,7 @@ button {
 }
 
 .we-offer__service-text {
-  font-family: "Ubuntu";
+  font-family: 'Ubuntu';
   font-weight: 400;
   font-size: 17px;
   line-height: 140%;
@@ -245,7 +269,7 @@ button {
   position: absolute;
   left: -9px;
   bottom: -22px;
-  font-family: "Ubuntu";
+  font-family: 'Ubuntu';
   font-weight: 500;
   font-size: 115px;
   line-height: 132px;
@@ -291,7 +315,7 @@ button {
 }
 
 .services__title {
-  font-family: "Ubuntu";
+  font-family: 'Ubuntu';
   font-weight: 700;
   font-size: 45px;
   line-height: 69px;
@@ -306,7 +330,7 @@ button {
 }
 
 .services__list {
-  font-family: "Ubuntu";
+  font-family: 'Ubuntu';
   font-weight: 400;
   font-size: 20px;
   line-height: 200%;
@@ -323,7 +347,7 @@ button {
 }
 
 .how-we-work__title {
-  font-family: "Ubuntu";
+  font-family: 'Ubuntu';
   font-weight: 700;
   font-size: 45px;
   line-height: 69px;
@@ -351,7 +375,7 @@ button {
   align-items: center;
   justify-content: center;
   margin-right: 8px;
-  font-family: "Ubuntu";
+  font-family: 'Ubuntu';
   font-weight: 400;
   font-size: 37px;
   line-height: 43px;
@@ -383,7 +407,7 @@ button {
 }
 
 .feedback__title {
-  font-family: "Ubuntu";
+  font-family: 'Ubuntu';
   font-weight: 700;
   font-size: 45px;
   line-height: 52px;
@@ -399,7 +423,7 @@ button {
 .form--name,
 .form--phone,
 .form--message {
-  font-family: "Ubuntu";
+  font-family: 'Ubuntu';
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -411,12 +435,11 @@ textarea {
   width: 568px;
   height: 66px;
   background: #ffffff;
-  box-shadow: 0px 2px 11px rgba(69, 65, 164, 0.06),
-    0px 4px 10px rgba(31, 37, 89, 0.07);
+  box-shadow: 0px 2px 11px rgba(69, 65, 164, 0.06), 0px 4px 10px rgba(31, 37, 89, 0.07);
   border-radius: 46px;
   border: none;
   outline: none;
-  font-family: "Ubuntu";
+  font-family: 'Ubuntu';
   font-weight: 300;
   font-size: 18px;
   line-height: 20px;
@@ -460,7 +483,7 @@ textarea::placeholder {
   border: none;
   width: 345px;
   height: 66px;
-  font-family: "Ubuntu";
+  font-family: 'Ubuntu';
   font-weight: 500;
   font-size: 21px;
   line-height: 20px;
@@ -500,7 +523,7 @@ textarea::placeholder {
 }
 
 .engines__table td {
-  font-family: "Ubuntu";
+  font-family: 'Ubuntu';
   font-weight: 200;
   font-size: 16px;
   line-height: 19px;
@@ -509,7 +532,7 @@ textarea::placeholder {
 
 .engine-title {
   text-align: left;
-  font-family: "Inter";
+  font-family: 'Inter';
   font-weight: 700;
   font-size: 23px;
   line-height: 28px;
@@ -531,7 +554,7 @@ textarea::placeholder {
 }
 
 .price-list__title {
-  font-family: "Ubuntu";
+  font-family: 'Ubuntu';
   font-weight: 700;
   font-size: 45px;
   line-height: 52px;
@@ -552,7 +575,7 @@ textarea::placeholder {
 
 .price-list__table tr {
   /* height: 20px; */
-  font-family: "Ubuntu";
+  font-family: 'Ubuntu';
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -565,7 +588,7 @@ textarea::placeholder {
 }
 
 .price-list__caption {
-  font-family: "Ubuntu";
+  font-family: 'Ubuntu';
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -583,7 +606,7 @@ textarea::placeholder {
 
 footer {
   background: #3f3f3f;
-  font-family: "Ubuntu";
+  font-family: 'Ubuntu';
   font-weight: 400;
   font-size: 20px;
   line-height: 23px;
@@ -606,7 +629,7 @@ footer {
 }
 
 .footer__title {
-  font-family: "Ubuntu";
+  font-family: 'Ubuntu';
   font-weight: 700;
   font-size: 30px;
   line-height: 120%;
@@ -643,16 +666,15 @@ footer {
 }
 
 .modal-window {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 90%;
-  background-color: #fff;
+  background: #d9d9d9;
   padding: 5rem 50px;
   border-radius: 5px;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
-  z-index: 10;
 }
 
 .modal-window p {
@@ -660,7 +682,7 @@ footer {
   line-height: 1.4em;
 }
 
-.overlay {
+.feedback-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -668,7 +690,6 @@ footer {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(3px);
-  z-index: 5;
 }
 
 .close-modal {
@@ -680,8 +701,4 @@ footer {
   cursor: pointer;
   border: none;
   background: none;
-}
-
-.modal-window {
-  background: #d9d9d9;
 }
