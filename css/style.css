@@ -314,7 +314,7 @@ button {
 }
 
 .services__list li {
-  list-style-type: none;
+  list-style: inside;
 }
 
 .how-we-work {
@@ -346,6 +346,7 @@ button {
   height: 70px;
   width: 54px;
   border: 1px solid #fdb900;
+  border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -355,6 +356,10 @@ button {
   font-size: 37px;
   line-height: 43px;
   text-align: center;
+}
+
+.how-we-work__item-img {
+  border-radius: 4px;
 }
 
 .odd {
@@ -374,6 +379,7 @@ button {
 .write-us {
   padding-top: 90px;
   padding-bottom: 90px;
+  background-color: #d9d9d9;
 }
 
 .feedback__title {
