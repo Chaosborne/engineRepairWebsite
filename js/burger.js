@@ -1,3 +1,5 @@
+'use strict';
+
 let burgerBtn = document.querySelector('.burger-btn');
 let mobMenu = document.querySelector('.header__menu-list--burger');
 let burgerOverlay = document.querySelector('.burger-overlay');

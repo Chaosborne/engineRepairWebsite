@@ -1,3 +1,5 @@
+'use strict';
+
 let topScroller = document.getElementById('top-scroller');
 
 window.addEventListener('scroll', () => {
