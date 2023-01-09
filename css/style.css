@@ -657,6 +657,14 @@ footer {
   line-height: 14px;
 }
 
+.footer__copyright--mobile {
+  display: none;
+}
+
+footer iframe {
+  height: 100%;
+}
+
 /* .footer-right {
 } */
 

@@ -187,8 +187,6 @@
   }
   .footer-right {
     width: 85%;
-    padding-left: 20px;
-    padding-right: 20px;
   }
 }
 
@@ -360,8 +358,17 @@
     padding-bottom: 90px;
   }
 
-  .footer {
-    padding-top: 70px;
+
+
+
+
+
+
+
+
+
+  footer {
+    padding-bottom: 30px;
   }
   .footer__inner {
     flex-direction: column;
@@ -371,12 +378,21 @@
     padding-left: 20px;
     padding-right: 20px;
   }
-  .footer-right {
-    width: 85%;
-    padding-left: 20px;
-    padding-right: 20px;
+  .footer__socials {
+    margin-bottom: 0;
   }
-
+  .footer-right {
+    width: 100%;
+    height: 500px;
+  }
+  .footer__copyright--pc {
+    display: none;
+  }
+  .footer__copyright--mobile {
+    display: block;
+    width: 90%;
+    margin: 30px auto 0;
+  }
   .close-modal {
     right: 3rem;
   }
