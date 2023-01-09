@@ -69,7 +69,7 @@ button {
 .header {
   /* height: 65vh; */
   padding-top: 156px;
-  background-image: url(/img/black_bg.jpg);
+  background-image: url(../img/black_bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -311,7 +311,7 @@ button {
 .services {
   padding-top: 60px;
   padding-bottom: 90px;
-  background-image: url(/img/services_bg.jpg);
+  background-image: url(../img/services_bg.jpg);
 }
 
 .services__title {
