@@ -33,7 +33,7 @@
                     </ul>
                     <img class="burger-btn" src="img/burger.svg" alt="">
                     <ul class="header__menu-list">
-                        <li class="header__menu-list-item header-menu__phone"><a href="tel:+71234567890">+7 (123) 456 78 90</a></li>
+                        <li class="header__menu-list-item header-menu__phone"><a href="tel:+79872900644">+7 (987) 290-06-44</a></li>
                     </ul>
                 </div>
             </div>
@@ -56,9 +56,10 @@
                 <button class="close-modal">&times;</button>
                 <form class="feedback__form feedback__form--modal" action="php/feedback.php" method="post">
                     <h4 class="form--name">Имя</h4>
-                    <input name="input--name" class="input--name" type="text" placeholder="Ваше имя">
+                    <input name="input--name" class="input--name" type="text" placeholder="Ваше имя" required>
                     <h4 class="form--name">Телефон</h4>
-                    <input name="input--phone" class="input2--phone" type="number" placeholder="Номер вашего телефона">
+                    <input name="input--phone" class="input2--phone" type="tel" placeholder="Номер вашего телефона" value="+7" placeholder="Номер вашего телефона" pattern="[+]{1}[7]{1}[0-9]{10}"
+                    required>
                     <h4 class="form--message">Сообщение</h4>
                     <textarea name="textarea" class="input--phone" type="text" placeholder="Введите ваше сообщение"></textarea>
                     <h4 class="hidden form--message">URL</h4>
@@ -83,7 +84,7 @@
                         <img class="info__item-img" src="img/phone_icon.svg" alt="">
                         <div class="info__item-content">
                             <h2 class="info__item-header">Позвоните нам</h2>
-                            <div class="info__item-detail">+7 123 45 67 89</div>
+                            <div class="info__item-detail">+7 (987) 290-06-44</div>
                         </div>
                     </div>
                     <div class="header__info-item">
@@ -206,9 +207,10 @@
                 <h2 class="feedback__title">Мы <span class="yellow">вам</span> перезвоним</h2>
                 <form class="feedback__form" action="php/feedback.php" method="post">
                     <h4 class="form--name">Имя</h4>
-                    <input name="input--name" class="input--name" type="text" placeholder="Ваше имя">
+                    <input name="input--name" class="input--name" type="text" placeholder="Ваше имя" required>
                     <h4 class="form--phone">Телефон</h4>
-                    <input name="input--phone" class="input--phone" type="number" placeholder="Номер вашего телефона">
+                    <input name="input--phone" class="input--phone" type="tel" value="+7" placeholder="Номер вашего телефона" pattern="[+]{1}[7]{1}[0-9]{10}"
+                    required>
                     <h4 class="hidden form--message">URL</h4>
                     <input  name="form--url" class="hidden" type="url" placeholder="Впишите URL">
                     <button class="form__btn" type="submit">Отправить</button>
@@ -425,9 +427,10 @@
                 <h2 class="feedback__title">Напишите нам</h2>
                 <form class="feedback__form" action="php/feedback.php" method="post">
                     <h4 class="form--name">Имя</h4>
-                    <input name="input--name" class="input--name" type="text" placeholder="Ваше имя">
+                    <input name="input--name" class="input--name" type="text" placeholder="Ваше имя" required>
                     <h4 class="form--phone">Телефон</h4>
-                    <input name="input--phone" class="input2--phone" type="number" placeholder="Номер вашего телефона">
+                    <input name="input--phone" class="input2--phone" type="tel" placeholder="Номер вашего телефона" value="+7" placeholder="Номер вашего телефона" pattern="[+]{1}[7]{1}[0-9]{10}"
+                    required>
                     <h4 class="form--message">Сообщение</h4>
                     <textarea name="textarea" class="input--phone" type="text" placeholder="Введите ваше сообщение"></textarea>
                     <h4 class="hidden form--message">URL</h4>
@@ -443,17 +446,19 @@
         <div class="footer__inner">
             <div class="footer-left">
                 <div class="footer__title"><span class="yellow">Ремонт двигателей</span><br>с гарантией</div>
-                <div class="footer__contact-info"><a href="tel:+71234567890">+7 (123) 456 78 90</a></div>
+                <div class="footer__contact-info"><a href="tel:+79872900644">+7 (987) 290-06-44</a></div>
                 <div class="footer__contact-info">mail@mail.com</div>
                 <div class="footer__contact-info">г. Казань, ул. Уличная, д. 1</div>
                 <div class="footer__contact-info footer__contact-info--last">08:00 - 18:00</div>
                 <div class="footer__socials">
-                    <a href="#"><img src="/img/whatsapp_icon.svg" alt=""></a>
-                    <a href="#"><img src="/img/telegram_icon.svg" alt=""></a>
+                    <a href="https://wa.me/+79172355944"><img src="/img/whatsapp_icon.svg" alt=""></a>
+                    <a href="https://t.me/Ayratart" target="_blank"><img src="/img/telegram_icon.svg" alt=""></a>
                 </div>
                 <div class="footer__copyright">2022 himmelen.space</div>
             </div>
-            <div class="footer-right">Карту сюда</div>
+            <div class="footer-right">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1c2c06cf24ce40fc6cac003f098b90d981b8fb94f5e4638db87697ab7f6c8382&amp;width=100%25&amp;height=506&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
         </div>
     </footer>
 
