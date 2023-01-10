@@ -1,3 +1,9 @@
+<?php
+    $pos = strpos($_SERVER['REQUEST_URI'], '?');
+    echo $_SERVER['REQUEST_URI'];
+    echo $pos;
+?>
+
 <!DOCTYPE html>
 <html lang="ru">
 
