@@ -44,7 +44,11 @@
             $phone_repl = str_replace('+7', '', $phone);
             echo 'Номер телефона +7' . $phone_repl;
 
-            $request = "INSERT INTO `orders`(`name`, `phone`, `message`, `id_form`) VALUES ('".$name."',".$phone_repl.",'".$textarea."', ".$id_form.")";
+            if ($textarea != NULL) {
+                $request = "INSERT INTO `orders`(`name`, `phone`, `message`, `id_form`) VALUES ('".$name."',".$phone_repl.",'".$textarea."', ".$id_form.")";
+            } else {
+                $request = "INSERT INTO `orders`(`name`, `phone`, `message`, `id_form`) VALUES ('".$name."',".$phone_repl.",NULL, ".$id_form.")";
+            }
             echo '<br>' . $request;
             $result_mysql = $connection->exec($request);
 
