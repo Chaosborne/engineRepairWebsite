@@ -358,15 +358,6 @@
     padding-bottom: 90px;
   }
 
-
-
-
-
-
-
-
-
-
   footer {
     padding-bottom: 30px;
   }
@@ -412,7 +403,7 @@
     left: -500px;
     height: 100vh;
     padding: 23px 90px 0 20px;
-    background-color: #4F3A00;
+    background-color: #4f3a00;
   }
   .header__menu-list--burger a {
     font-size: 22px;
@@ -428,7 +419,7 @@
   }
   .show-burger-menu {
     left: 0;
-    transition: left  0.5s;
+    transition: left 0.5s;
   }
   .show-burger-overlay {
     display: block;
@@ -439,5 +430,33 @@
   }
   .burger-btn--close {
     width: 25px;
+  }
+
+  .d-n-exist,
+  .success {
+    height: 80vh;
+  }
+  .d-n-exist__item {
+    width: 70px;
+    height: 70px;
+    font-size: 39px;
+    line-height: 130%;
+  }
+  .d-n-exist__message {
+    font-size: 18px;
+  }
+
+  .success__message {
+    font-size: 25px;
+    line-height: 140%;
+  }
+  .success__details {
+    line-height: 150%;
+  }
+  .success__details .yellow {
+    line-height: 190%;
+  }
+  .success__close {
+    font-weight: 600;
   }
 }
