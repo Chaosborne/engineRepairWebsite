@@ -2,6 +2,14 @@
     $pos = strpos($_SERVER['REQUEST_URI'], '?');
     echo $_SERVER['REQUEST_URI'];
     echo $pos;
+    if ($pos == null) {
+        echo 'чисто';
+        $url = $_SERVER['REQUEST_URI'];
+    } else {
+        $url = strstr($_SERVER['REQUEST_URI'], '?', true);
+    }
+
+    if (strlen ($url) >= 1) echo 'не чисто';
 ?>
 
 <!DOCTYPE html>
@@ -16,6 +24,7 @@
     <link rel="stylesheet" href="css/media.css">
     <title>Ремонт двигателей в Казани - актуальные цены | Мотор-Доктор</title>
     <?php if ($pos == 1) echo '<link rel="canonical" href="'. ((!empty($_SERVER['HTTPS'])) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] .'"/>'; ?>
+
 </head>
 
 <body>
