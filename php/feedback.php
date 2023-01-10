@@ -17,10 +17,12 @@
             }
     
             $subject = 'Заявка с сайта: ' . $name; // Тема письма
-    
+            $textarea = null
+
             if (isset($_POST['textarea'])) {
                 $message = $_POST['textarea'] . '<br>Телефон: ' . $phone;
                 $subject .= ' - запросил обрытный звонок';
+                $textarea = $_POST['textarea'];
             }
 
             if (isset($_POST['id'])) {
