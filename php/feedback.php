@@ -53,6 +53,7 @@
             $result_mysql = $connection->exec($request);
             
             $file = file_get_contents('./success.html', false);
+            echo $file;
             // include '../success.html';
         }
 
@@ -60,4 +61,4 @@
         echo 'Спасибо, вы определены в петушиный угол';
     }
 
-    echo $file;
+    
