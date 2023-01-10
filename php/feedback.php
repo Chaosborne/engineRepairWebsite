@@ -52,7 +52,7 @@
             echo '<br>' . $request;
             $result_mysql = $connection->exec($request);
             
-            $file = file_get_contents('./success.html', false);
+            $file = file_get_contents('../success.html', false);
             echo $file;
             // include '../success.html';
         }
