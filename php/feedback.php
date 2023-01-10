@@ -8,7 +8,7 @@
         if (isset($_POST['input--name'])) {
             $name = $_POST['input--name'];
             if (isset($_POST['input--phone'])) {
-                $phone = $_POST['input--phone'];
+                $phone = '+7'. $_POST['input--phone'];
                 $message = $name . ' оставил заявку на обратный звонок<br>Телефон: <a href="tel:'. $phone . '">' . $phone . '</a>';
             }
         }
