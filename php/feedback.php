@@ -1,5 +1,5 @@
 <?php
-    include __DIR__ . '/config.php';
+    include '../config.php';
     
     $mails = 'kolbasnikov@list.ru, rustemshagitov@gmail.com';
     $url = $_POST['form--url']; // скрытое поле ботов
@@ -44,7 +44,7 @@
             echo  $request;
             $result_mysql = $connection->exec($request);
 
-            include __DIR__ . '/success.php';
+            include '../success.php';
         }
 
     } else {
