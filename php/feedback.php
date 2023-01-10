@@ -20,6 +20,18 @@
                 $message = $_POST['textarea'] . '<br>Телефон: ' . $phone;
                 $subject .= ' - запросил обрытный звонок';
             }
+
+            if (isset($_POST['id'])) {
+                $id_form = (int)$_POST['id'];
+                switch ($id_form) {                   
+                    case 1: $form_name = 'Модальное окно'; break;
+                    case 2: $form_name = 'Обратный звонок'; break;
+                    case 3: $form_name = 'Форма перед футером'; break;
+                }
+
+                echo 'Форма: '. $form_name . '<br>';
+               
+            }
             
             mail($mails, $subject, $message, $headers);
             echo 'Спасибо, ' .$name. '. Ваша заявка отправлена. <br>';
@@ -27,6 +39,10 @@
 
             $phone_repl = str_replace('+7', '', $phone);
             echo 'Номер телефона +7' . $phone_repl;
+
+            $request = "INSERT INTO `orders`(`name`, `phone`, `message`) VALUES (".$name.",'".$phone_repl."','".$message."', ".$id_form.")";
+            echo  $request;
+            $result_mysql = $connection->exec($request);
 
             include __DIR__ . '/success.php';
         }
