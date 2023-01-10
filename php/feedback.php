@@ -51,9 +51,14 @@
             }
             echo '<br>' . $request;
             $result_mysql = $connection->exec($request);
+
+            $url_full = ((!empty($_SERVER['HTTPS'])) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] . '/success.html';
+            header("HTTP/1.1 301 Moved Permanently"); 
+            header("Location: " . $url_full);
+        
             
-            $file = file_get_contents('../success.html', false);
-            echo $file;
+            // $file = file_get_contents('../success.html', false);
+            // echo $file;
             // include '../success.html';
         }
 
