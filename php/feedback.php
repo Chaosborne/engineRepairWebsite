@@ -40,8 +40,8 @@
             $phone_repl = str_replace('+7', '', $phone);
             echo 'Номер телефона +7' . $phone_repl;
 
-            $request = "INSERT INTO `orders`(`name`, `phone`, `message`) VALUES (".$name.",'".$phone_repl."','".$message."', ".$id_form.")";
-            echo  $request;
+            $request = "INSERT INTO `orders`(`name`, `phone`, `message`, `id_form`) VALUES (".$name.",'".$phone_repl."','".$message."', ".$id_form.")";
+            echo '<br>' . $request;
             $result_mysql = $connection->exec($request);
 
             include '../success.php';
