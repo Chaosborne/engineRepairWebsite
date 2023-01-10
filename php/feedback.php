@@ -46,7 +46,7 @@
             echo '<br>' . $request;
             $result_mysql = $connection->exec($request);
 
-            include '../success.php';
+            include '../success.html';
         }
 
     } else {
