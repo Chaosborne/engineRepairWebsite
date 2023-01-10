@@ -17,7 +17,7 @@
             }
     
             $subject = 'Заявка с сайта: ' . $name; // Тема письма
-            $textarea = null
+            $textarea = null;
 
             if (isset($_POST['textarea'])) {
                 $message = $_POST['textarea'] . '<br>Телефон: ' . $phone;
