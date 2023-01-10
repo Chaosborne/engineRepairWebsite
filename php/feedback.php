@@ -21,7 +21,7 @@
 
             if (isset($_POST['textarea'])) {
                 $message = $_POST['textarea'] . '<br>Телефон: ' . $phone;
-                $subject .= ' - запросил обрытный звонок';
+                $subject .= ' - запросил обратный звонок';
                 $textarea = $_POST['textarea'];
             }
 
