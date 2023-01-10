@@ -51,10 +51,13 @@
             }
             echo '<br>' . $request;
             $result_mysql = $connection->exec($request);
-
-            include '../success.html';
+            
+            $file = file_get_contents('./success.html', false);
+            // include '../success.html';
         }
 
     } else {
         echo 'Спасибо, вы определены в петушиный угол';
     }
+
+    echo $file;
