@@ -27,6 +27,8 @@
 
             $phone_repl = str_replace('+7', '', $phone);
             echo 'Номер телефона +7' . $phone_repl;
+
+            include __DIR__ . '/sussess.php';
         }
 
     } else {
