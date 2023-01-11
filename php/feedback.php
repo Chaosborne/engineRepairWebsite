@@ -42,26 +42,21 @@
 
 
             $phone_repl = (int)str_replace('+7', '', $phone);
-            echo 'Номер телефона в базу ' . $phone_repl . ' было ' . $phone;
+            // echo 'Номер телефона в базу ' . $phone_repl . ' было ' . $phone;
             $now_time = time();
-            var_dump($phone_repl);
+            // var_dump($phone_repl);
 
             if ($textarea != NULL) {
-                $request = "INSERT INTO `orders`(`name`, `phone`, `message`, `id_form`, `time`) VALUES ('".$name."','".$phone_repl."','".$textarea."', ".$id_form.", '". $now_time ."')";
+                $request = "INSERT INTO `orders`(`name`, `phone`, `message`, `id_form`, `time`) VALUES ('".$name."',".$phone_repl.",'".$textarea."', ".$id_form.", ". $now_time .")";
             } else {
-                $request = "INSERT INTO `orders`(`name`, `phone`, `message`, `id_form`, `time`) VALUES ('".$name."','".$phone_repl."',NULL, ".$id_form.", '". $now_time ."')";
+                $request = "INSERT INTO `orders`(`name`, `phone`, `message`, `id_form`, `time`) VALUES ('".$name."',".$phone_repl.",NULL, ".$id_form.", ". $now_time .")";
             }
             echo '<br>' . $request;
             $result_mysql = $connection->exec($request);
 
-            // $url_full = ((!empty($_SERVER['HTTPS'])) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] . '/success.html';
-            // header("HTTP/1.1 301 Moved Permanently"); 
-            // header("Location: " . $url_full);
-        
-            
-            // $file = file_get_contents('../success.html', false);
-            // echo $file;
-            // include '../success.html';
+            $url_full = ((!empty($_SERVER['HTTPS'])) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] . '/success.html';
+            header("HTTP/1.1 301 Moved Permanently"); 
+            header("Location: " . $url_full);
         }
 
     } else {
