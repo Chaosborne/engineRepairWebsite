@@ -1,16 +1,5 @@
 <?php
     $pos = strpos($_SERVER['REQUEST_URI'], '?');
-    echo $_SERVER['REQUEST_URI'];
-    echo $pos;
-    if ($pos == null) {
-        echo 'чисто';
-        $url = $_SERVER['REQUEST_URI'];
-    } else {
-        $url = strstr($_SERVER['REQUEST_URI'], '?', true);
-    }
-    $url_full = ((!empty($_SERVER['HTTPS'])) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'];
-    $headers = get_headers($url_full);
-    echo $headers[0];
 ?>
 
 <!DOCTYPE html>
