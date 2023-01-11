@@ -7,6 +7,7 @@
     } else $url = NULL;
     $headers = 'MIME-Version: 1.0' . "\r\n"; // заголовок соответствует формату плюс символ перевода строки
     $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n"; // указывает на тип посылаемого контента
+    $headers .= "From: A-mailer <no-reply@motor-doctor.ru>\r\n";
     
     if ($url == NULL) {
         if (isset($_POST['input--name'])) {
