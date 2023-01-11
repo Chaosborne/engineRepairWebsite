@@ -44,11 +44,12 @@
             $phone_repl = str_replace('+7', '', $phone);
             echo 'Номер телефона в базу ' . $phone_repl . ' было ' . $phone;
             $now_time = time();
+            var_dump($phone_repl);
 
             if ($textarea != NULL) {
-                $request = "INSERT INTO `orders`(`name`, `phone`, `message`, `id_form`) VALUES ('".$name."',".(int)$phone_repl.",'".$textarea."', ".$id_form.")";
+                $request = "INSERT INTO `orders`(`name`, `phone`, `message`, `id_form`, `time`) VALUES ('".$name."',".(int)$phone_repl.",'".$textarea."', ".$id_form.", ". $now_time .")";
             } else {
-                $request = "INSERT INTO `orders`(`name`, `phone`, `message`, `id_form`) VALUES ('".$name."',".(int)$phone_repl.",NULL, ".$id_form.")";
+                $request = "INSERT INTO `orders`(`name`, `phone`, `message`, `id_form`, `time`) VALUES ('".$name."',".(int)$phone_repl.",NULL, ".$id_form.", ". $now_time .")";
             }
             // echo '<br>' . $request;
             $result_mysql = $connection->exec($request);
