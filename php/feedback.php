@@ -47,9 +47,9 @@
             var_dump($phone_repl);
 
             if ($textarea != NULL) {
-                $request = "INSERT INTO `orders`(`name`, `phone`, `message`, `id_form`, `time`) VALUES ('".$name."',".$phone_repl.",'".$textarea."', ".$id_form.", ". $now_time .")";
+                $request = "INSERT INTO `orders`(`name`, `phone`, `message`, `id_form`, `time`) VALUES ('".$name."','".$phone_repl."','".$textarea."', ".$id_form.", '". $now_time ."')";
             } else {
-                $request = "INSERT INTO `orders`(`name`, `phone`, `message`, `id_form`, `time`) VALUES ('".$name."',".$phone_repl.",NULL, ".$id_form.", ". $now_time .")";
+                $request = "INSERT INTO `orders`(`name`, `phone`, `message`, `id_form`, `time`) VALUES ('".$name."','".$phone_repl."',NULL, ".$id_form.", '". $now_time ."')";
             }
             echo '<br>' . $request;
             $result_mysql = $connection->exec($request);
