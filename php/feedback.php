@@ -42,7 +42,7 @@
 
 
             $phone_repl = str_replace('+7', '', $phone);
-            echo 'Номер телефона +7' . $phone_repl;
+            echo 'Номер телефона в базу ' . $phone_repl . ' было ' . $phone;
             $now_time = time();
 
             if ($textarea != NULL) {
