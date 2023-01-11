@@ -8,8 +8,9 @@
     } else {
         $url = strstr($_SERVER['REQUEST_URI'], '?', true);
     }
-
-    if (strlen ($url) >= 1) echo 'не чисто';
+    $url_full = ((!empty($_SERVER['HTTPS'])) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'];
+    $headers = get_headers($url_full);
+    echo $headers[0];
 ?>
 
 <!DOCTYPE html>
@@ -23,7 +24,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
     <title>Ремонт двигателей в Казани - актуальные цены | Мотор-Доктор</title>
-    <?php if ($pos == 1) echo '<link rel="canonical" href="'. ((!empty($_SERVER['HTTPS'])) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] .'"/>'; ?>
+    <?php if ($pos == 1) echo '<link rel="canonical" href="'. $url_full .'"/>'; ?>
 
 </head>
 
