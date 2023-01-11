@@ -46,9 +46,9 @@
             $now_time = time();
 
             if ($textarea != NULL) {
-                $request = "INSERT INTO `orders`(`name`, `phone`, `message`, `id_form`) VALUES ('".$name."',".$phone_repl.",'".$textarea."', ".$id_form.")";
+                $request = "INSERT INTO `orders`(`name`, `phone`, `message`, `id_form`) VALUES ('".$name."',".(int)$phone_repl.",'".$textarea."', ".$id_form.")";
             } else {
-                $request = "INSERT INTO `orders`(`name`, `phone`, `message`, `id_form`) VALUES ('".$name."',".$phone_repl.",NULL, ".$id_form.")";
+                $request = "INSERT INTO `orders`(`name`, `phone`, `message`, `id_form`) VALUES ('".$name."',".(int)$phone_repl.",NULL, ".$id_form.")";
             }
             // echo '<br>' . $request;
             $result_mysql = $connection->exec($request);
@@ -66,5 +66,3 @@
     } else {
         echo 'Спасибо, вы определены в петушиный угол';
     }
-
-    
