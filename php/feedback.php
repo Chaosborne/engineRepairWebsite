@@ -1,7 +1,7 @@
 <?php
-    include '/php/config.php';
+    include '../config.php';
     
-    $mails = 'kolbasnikov@list.ru, rustemshagitov@gmail.com, ayrat202@mail.ru';
+    $mails = 'kolbasnikov@list.ru, rustemshagitov@gmail.com'; // ayrat202@mail.ru
     if (isset($_POST['form--url'])) {
         $url = $_POST['form--url']; // скрытое поле для ботов
     } else $url = NULL;
@@ -20,10 +20,10 @@
             $textarea = null;
 
             if (isset($_POST['textarea'])) {
-                $message = $_POST['textarea'] . '<br>Телефон: ' . $phone;
-                $subject .= ' - запросил обратный звонок';
+                $message = "Сообщение от " . $name . ': '. $_POST['textarea'] . '<br>Телефон: ' . $phone;
+                $subject .= ' - оставил сообщение';
                 $textarea = $_POST['textarea'];
-            }
+            } else $subject .= ' - запросил обратный звонок';
 
             if (isset($_POST['id'])) {
                 $id_form = (int)$_POST['id'];
@@ -50,7 +50,7 @@
             } else {
                 $request = "INSERT INTO `orders`(`name`, `phone`, `message`, `id_form`) VALUES ('".$name."',".$phone_repl.",NULL, ".$id_form.")";
             }
-            echo '<br>' . $request;
+            // echo '<br>' . $request;
             $result_mysql = $connection->exec($request);
 
             $url_full = ((!empty($_SERVER['HTTPS'])) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] . '/success.html';
