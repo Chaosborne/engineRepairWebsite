@@ -1,5 +1,6 @@
 <?php
     $pos = strpos($_SERVER['REQUEST_URI'], '?');
+    $url_full = ((!empty($_SERVER['HTTPS'])) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'];
 ?>
 
 <!DOCTYPE html>
