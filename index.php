@@ -1,21 +1,19 @@
-<?php
-    $pos = strpos($_SERVER['REQUEST_URI'], '?');
-    $url_full = ((!empty($_SERVER['HTTPS'])) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'];
-?>
-
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media.css">
-    <title>Ремонт двигателей в Казани - актуальные цены | Мотор-Доктор</title>
-    <?php if ($pos == 1) echo '<link rel="canonical" href="'. $url_full .'"/>'; ?>
-
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/media.css">
+        <title>Ремонт двигателей в Казани - актуальные цены | Мотор-Доктор</title>
+        <?php 
+            $pos = strpos($_SERVER['REQUEST_URI'], '?');
+            $url_full = ((!empty($_SERVER['HTTPS'])) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'];
+            if ($pos == 1) echo '<link rel="canonical" href="'. $url_full .'"/>'; 
+        ?>        
 </head>
 
 <body>

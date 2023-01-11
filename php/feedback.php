@@ -1,7 +1,7 @@
 <?php
-    include '../config.php';
+    include '/config.php';
     
-    $mails = 'kolbasnikov@list.ru, rustemshagitov@gmail.com';
+    $mails = 'kolbasnikov@list.ru, rustemshagitov@gmail.com, ayrat202@mail.ru';
     if (isset($_POST['form--url'])) {
         $url = $_POST['form--url']; // скрытое поле для ботов
     } else $url = NULL;
@@ -16,7 +16,7 @@
                 $message = $name . ' оставил заявку на обратный звонок<br>Телефон: <a href="tel:'. $phone . '">' . $phone . '</a>';
             }
     
-            $subject = 'Заявка с сайта: ' . $name; // Тема письма
+            $subject = 'Заявка с сайта Мотор-Доктор: ' . $name; // Тема письма
             $textarea = null;
 
             if (isset($_POST['textarea'])) {
@@ -43,6 +43,7 @@
 
             $phone_repl = str_replace('+7', '', $phone);
             echo 'Номер телефона +7' . $phone_repl;
+            $now_time = time();
 
             if ($textarea != NULL) {
                 $request = "INSERT INTO `orders`(`name`, `phone`, `message`, `id_form`) VALUES ('".$name."',".$phone_repl.",'".$textarea."', ".$id_form.")";
