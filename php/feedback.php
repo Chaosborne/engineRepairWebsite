@@ -1,7 +1,7 @@
 <?php
     include '../config.php';
     
-    $mails = 'kolbasnikov@list.ru, rustemshagitov@gmail.com'; // ayrat202@mail.ru
+    $mails = 'kolbasnikov@list.ru, rustemshagitov@gmail.com, ayrat202@mail.ru';
     if (isset($_POST['form--url'])) {
         $url = $_POST['form--url']; // скрытое поле для ботов
     } else $url = NULL;
