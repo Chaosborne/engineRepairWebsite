@@ -51,7 +51,7 @@
             } else {
                 $request = "INSERT INTO `orders`(`name`, `phone`, `message`, `id_form`, `time`) VALUES ('".$name."',".$phone_repl.",NULL, ".$id_form.", ". $now_time .")";
             }
-            // echo '<br>' . $request;
+            echo '<br>' . $request;
             $result_mysql = $connection->exec($request);
 
             // $url_full = ((!empty($_SERVER['HTTPS'])) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] . '/success.html';
