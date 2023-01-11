@@ -1,5 +1,5 @@
 <?php
-    include '/config.php';
+    include '/php/config.php';
     
     $mails = 'kolbasnikov@list.ru, rustemshagitov@gmail.com, ayrat202@mail.ru';
     if (isset($_POST['form--url'])) {
