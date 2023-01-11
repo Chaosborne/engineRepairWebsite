@@ -23,7 +23,7 @@
             <img class="burger-btn--close burger-closer" src="img/burger-close.svg" alt="">
             <li class="header__menu-list-item burger-closer"><a class="header__menu-link" href="#we-offer">Наши услуги</a></li>
             <li class="header__menu-list-item burger-closer"><a class="header__menu-link" href="#price-list">Цены</a></li>
-            <li class="header__menu-list-item burger-closer"><a class="header__menu-link" href="#footer">Контакты</a></li>
+            <li class="header__menu-list-item burger-closer"><a class="header__menu-link" href="#contacts">Контакты</a></li>
         </ul>
         <div class="burger-overlay"></div>
         <!-- /burger  -->
@@ -34,7 +34,7 @@
                     <ul class="header__menu-list header__menu-list--left">
                         <li class="header__menu-list-item"><a class="header__menu-link" href="#we-offer">Наши услуги</a></li>
                         <li class="header__menu-list-item"><a class="header__menu-link" href="#price-list">Цены</a></li>
-                        <li class="header__menu-list-item"><a class="header__menu-link" href="#footer">Контакты</a></li>
+                        <li class="header__menu-list-item"><a class="header__menu-link" href="#contacts">Контакты</a></li>
                     </ul>
                     <img class="burger-btn" src="img/burger.svg" alt="">
                     <ul class="header__menu-list">
@@ -450,7 +450,7 @@
           
     </main>
 
-    <footer id="footer">
+    <footer id="contacts">
         <div class="footer__inner">
             <div class="footer-left">
                 <div class="footer__title"><span class="yellow">Ремонт двигателей</span><br>с гарантией</div>
