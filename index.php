@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/media.css">
+        <!-- sup -->
         <title>Ремонт двигателей в Казани - актуальные цены | Мотор-Доктор</title>
         <?php 
             $pos = strpos($_SERVER['REQUEST_URI'], '?');
@@ -184,10 +185,10 @@
                             <div class="how-we-work__item-number">1</div>
                             <div class="how-we-work__item-text">ВЫ ЗВОНИТЕ НАМ</div>
                         </div>
-                        <img class="how-we-work__item-img" src="/img/you_call.jpg" alt="">
+                        <img class="how-we-work__item-img" src="img/you_call.jpg" alt="">
                     </div>
                     <div class="how-we-work__item">
-                        <img class="how-we-work__item-img hww__item-img--order-2" src="/img/you_choose.jpg" alt="">
+                        <img class="how-we-work__item-img hww__item-img--order-2" src="img/you_choose.jpg" alt="">
                         <div class="how-we-work__item-info hww__item-info--order-1 honest">
                             <div class="how-we-work__item-number">2</div>
                             <div class="how-we-work__item-text">ВЫБИРАЕТЕ УСЛУГУ</div>
@@ -198,10 +199,10 @@
                             <div class="how-we-work__item-number">3</div>
                             <div class="how-we-work__item-text">ОСТАВЛЯЕТЕ АВТО</div>
                         </div>
-                        <img class="how-we-work__item-img" src="/img/you_drop.jpg" alt="">
+                        <img class="how-we-work__item-img" src="img/you_drop.jpg" alt="">
                     </div>
                     <div class="how-we-work__item">
-                        <img class="how-we-work__item-img hww__item-img--order-2" src="/img/you_accept.jpg" alt="">
+                        <img class="how-we-work__item-img hww__item-img--order-2" src="img/you_accept.jpg" alt="">
                         <div class="how-we-work__item-info hww__item-info--order-1 honest">
                             <div class="how-we-work__item-number">4</div>
                             <div class="how-we-work__item-text">ПРИНИМАЕТЕ РАБОТУ</div>
@@ -462,8 +463,8 @@
                 <div class="footer__contact-info">г. Казань, Дорожный переулок, д. 3а</div>
                 <div class="footer__contact-info footer__contact-info--last">08:00 - 18:00</div>
                 <div class="footer__socials">
-                    <a href="https://wa.me/+79172355944"><img src="/img/whatsapp_icon.svg" alt="WatsApp"></a>
-                    <a href="https://t.me/Ayratart" target="_blank"><img src="/img/telegram_icon.svg" alt="Telegram"></a>
+                    <a href="https://wa.me/+79172355944"><img src="img/whatsapp_icon.svg" alt="WatsApp"></a>
+                    <a href="https://t.me/Ayratart" target="_blank"><img src="img/telegram_icon.svg" alt="Telegram"></a>
                 </div>
                 <div class="footer__copyright footer__copyright--pc">2022 himmelen.space</div>
             </div>
@@ -474,6 +475,7 @@
         </div>
     </footer>
 
+<<<<<<< HEAD
     <script src="/js/modal.js"></script>
     <script src="/js/topScroll.js"></script>
     <script src="/js/burger.js"></script>
@@ -495,6 +497,12 @@
     </script>
     <noscript><div><img src="https://mc.yandex.ru/watch/92002874" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
+=======
+    <script src="js/modal.js"></script>
+    <script src="js/topScroll.js"></script>
+    <script src="js/burger.js"></script>
+    <script src="js/yandexMetrix.js"></script>
+>>>>>>> efe54cf033c4a396328eca46db47a09fe2a04e14
 
 </body>
 
