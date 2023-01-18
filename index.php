@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/media.css">
+        <!-- sup -->
         <title>Ремонт двигателей в Казани - актуальные цены | Мотор-Доктор</title>
         <?php 
             $pos = strpos($_SERVER['REQUEST_URI'], '?');
