@@ -475,7 +475,6 @@
         </div>
     </footer>
 
-<<<<<<< HEAD
     <script src="/js/modal.js"></script>
     <script src="/js/topScroll.js"></script>
     <script src="/js/burger.js"></script>
@@ -497,12 +496,6 @@
     </script>
     <noscript><div><img src="https://mc.yandex.ru/watch/92002874" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
-=======
-    <script src="js/modal.js"></script>
-    <script src="js/topScroll.js"></script>
-    <script src="js/burger.js"></script>
-    <script src="js/yandexMetrix.js"></script>
->>>>>>> efe54cf033c4a396328eca46db47a09fe2a04e14
 
 </body>
 
