@@ -2,6 +2,9 @@
 Options +FollowSymLinks
 RewriteEngine On
 
+RewriteCond %{HTTPS} =off 
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [QSA,L]
+
 ErrorDocument 404 https://motor-doctor.ru/404.html
 
 # Redirect requests to index.php
