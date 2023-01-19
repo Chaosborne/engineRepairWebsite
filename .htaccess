@@ -2,11 +2,11 @@
 Options +FollowSymLinks
 RewriteEngine On
 
-#RewriteCond %{HTTPS} =off 
-#RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [QSA,L]
+RewriteCond %{HTTPS} =off 
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [QSA,L]
 
-#RewriteCond %{HTTP_HOST} ^www.motor-doctor.ru$ [NC]
-#RewriteRule ^(.*)$ http://motor-doctor.ru/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^www.motor-doctor.ru$ [NC]
+RewriteRule ^(.*)$ http://motor-doctor.ru/$1 [R=301,L]
 
 ErrorDocument 404 https://motor-doctor.ru/404.html
 
