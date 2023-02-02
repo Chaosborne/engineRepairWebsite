@@ -84,21 +84,21 @@
             <div class="container menu-container header__container">
                 <div class="header__info-items">
                     <div class="header__info-item">
-                        <img class="info__item-img" src="img/clock-icon.svg" alt="">
+                        <img class="info__item-img" src="img/clock-icon.svg" alt="" loading="lazy">
                         <div class="info__item-content">
                             <h2 class="info__item-header">Мы открыты Пн - Пт</h2>
                             <div class="info__item-detail">08:00 - 18:00</div>
                         </div>
                     </div>
                     <div class="header__info-item">
-                        <img class="info__item-img" src="img/phone_icon.svg" alt="">
+                        <img class="info__item-img" src="img/phone_icon.svg" alt="" loading="lazy">
                         <div class="info__item-content">
                             <h2 class="info__item-header">Позвоните нам</h2>
                             <div class="info__item-detail">+7 (987) 290-06-44</div>
                         </div>
                     </div>
                     <div class="header__info-item">
-                        <img class="info__item-img" src="img/address_icon.svg" alt="">
+                        <img class="info__item-img" src="img/address_icon.svg" alt=""loading="lazy">
                         <div class="info__item-content">
                             <h3 class="info__item-header">Наш адрес</h2>
                                 <div class="info__item-detail">г. Казань, Дорожный переулок, 3а</div>
@@ -122,7 +122,7 @@
                         <div class="we-offer__service-watermark we-offer__service-watermark--yellow">Обслуживание</div>
                     </div>
                     <div class="we-offer__img">
-                        <img src="img/we-offer__oil.jpg" alt="">
+                        <img src="img/we-offer__oil.jpg" alt="" loading="lazy">
                     </div>
                     <div class="we-offer__service we-offer__bg--light-gray">
                         <div class="we-offer__service-title">Капитальный<br> ремонт</div>
@@ -133,7 +133,7 @@
                 </div>
                 <div class="we-offer__3-row">
                     <div class="we-offer__img">
-                        <img src="img/comp_diag.jpg" alt="">
+                        <img src="img/comp_diag.jpg" alt="" loading="lazy">
                     </div>
                     <div class="we-offer__service we-offer__bg--dark-gray">
                         <div class="we-offer__service-title yellow">Компьютерная<br> диагностика</div>
@@ -141,7 +141,7 @@
                         <div class="we-offer__service-watermark we-offer__service-watermark--dark-gray">Диагностика</div>
                     </div>
                     <div class="we-offer__img">
-                        <img src="img/engine.jpg" alt="">
+                        <img src="img/engine.jpg" alt="" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -185,10 +185,10 @@
                             <div class="how-we-work__item-number">1</div>
                             <div class="how-we-work__item-text">ВЫ ЗВОНИТЕ НАМ</div>
                         </div>
-                        <img class="how-we-work__item-img" src="img/you_call.jpg" alt="">
+                        <img class="how-we-work__item-img" src="img/you_call.jpg" alt="" loading="lazy">
                     </div>
                     <div class="how-we-work__item">
-                        <img class="how-we-work__item-img hww__item-img--order-2" src="img/you_choose.jpg" alt="">
+                        <img class="how-we-work__item-img hww__item-img--order-2" src="img/you_choose.jpg" alt="" loading="lazy">
                         <div class="how-we-work__item-info hww__item-info--order-1 honest">
                             <div class="how-we-work__item-number">2</div>
                             <div class="how-we-work__item-text">ВЫБИРАЕТЕ УСЛУГУ</div>
@@ -199,10 +199,10 @@
                             <div class="how-we-work__item-number">3</div>
                             <div class="how-we-work__item-text">ОСТАВЛЯЕТЕ АВТО</div>
                         </div>
-                        <img class="how-we-work__item-img" src="img/you_drop.jpg" alt="">
+                        <img class="how-we-work__item-img" src="img/you_drop.jpg" alt="" loading="lazy">
                     </div>
                     <div class="how-we-work__item">
-                        <img class="how-we-work__item-img hww__item-img--order-2" src="img/you_accept.jpg" alt="">
+                        <img class="how-we-work__item-img hww__item-img--order-2" src="img/you_accept.jpg" alt="" loading="lazy">
                         <div class="how-we-work__item-info hww__item-info--order-1 honest">
                             <div class="how-we-work__item-number">4</div>
                             <div class="how-we-work__item-text">ПРИНИМАЕТЕ РАБОТУ</div>
@@ -233,7 +233,7 @@
             <div class="container engines__container--no-padding engines__container">
                 <div class="engine-items">
                     <div class="engine-item">
-                        <img class="engine-img" src="img/engine_1.png" alt="">
+                        <img class="engine-img" src="img/engine_1.png" alt="" loading="lazy">
                         <table class="engines__table">
                             <caption class="engine-title">Двигатель КАМАЗ 740.10</caption>
                             <tr>
@@ -251,7 +251,7 @@
                         </table>
                     </div>
                     <div class="engine-item">
-                        <img class="engine-img" src="img/engine_2.png" alt="">
+                        <img class="engine-img" src="img/engine_2.png" alt="" loading="lazy">
                         <table class="engines__table">
                             <caption class="engine-title">Двигатель КАМАЗ 740.11</caption>
                             <tr>
@@ -269,7 +269,7 @@
                         </table>
                     </div>
                     <div class="engine-item">
-                        <img class="engine-img" src="img/engine_3.png" alt="">
+                        <img class="engine-img" src="img/engine_3.png" alt="" loading="lazy">
                         <table class="engines__table">
                             <caption class="engine-title">Двигатель CUMMINS</caption>
                             <tr>
@@ -315,10 +315,10 @@
                         <tr><td><br></td></tr>
                         <tr><td colspan="2">ХОНИНГОВКА ЦИЛИНДРА ОТДЕЛЬНО 2/3 от стоимости расточки</td></tr>
                     </table>
-                    <img class="price-table__img" src="img/price_1.png" alt="">
+                    <img class="price-table__img" src="img/price_1.png" alt="" loading="lazy">
                 </div>
                 <div class="price-list__item">
-                    <img class="price-table__img price--2" src="img/price_2.png" alt="">
+                    <img class="price-table__img price--2" src="img/price_2.png" alt="" loading="lazy">
                     <table class="price-list__table price--1">
                         <caption class="price-list__caption">РЕМОНТ ГБЦ</caption>
                         <tr><td>Рассухарить клапан легковые отечеств</td><td>25 руб. за шт.</td>
@@ -376,10 +376,10 @@
                         <!-- hidden -->
 
                     </table>
-                    <img class="price-table__img" src="img/price_3.png" alt="">
+                    <img class="price-table__img" src="img/price_3.png" alt="" loading="lazy">
                 </div>
                 <div class="price-list__item">
-                    <img class="price--2" src="img/price_4.png" alt="">
+                    <img class="price--2" src="img/price_4.png" alt="" loading="lazy">
                     <table class="price-list__table price--1">
                         <caption class="price-list__caption">ГИЛЬЗОВКА БЛОКОВ</caption>
                         <tr><td>Ока</td><td>3 500 руб.</td></tr>
@@ -426,7 +426,7 @@
                     <tr><td>Снятие шестеренки/ противовесов-</td><td></td></tr>
                     <tr><td>Шлифовка коленвала через размер </td><td></td></tr>
                     </table>
-                    <img class="price-table__img" src="img/price_5.png" alt="">
+                    <img class="price-table__img" src="img/price_5.png" alt="" loading="lazy">
                 </div> -->
                 <!-- /hidden -->
 
