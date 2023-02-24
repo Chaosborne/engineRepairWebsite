@@ -175,60 +175,6 @@
             </div>
         </section>
 
-        <section class="how-we-work">
-            <div class="container how-we-work__container">
-                <h2 class="how-we-work__title"><span class="yellow">Как</span> мы работаем</h2>
-                <div class="how-we-work__items">
-
-                    <div class="how-we-work__item">
-                        <div class="how-we-work__item-info odd">
-                            <div class="how-we-work__item-number">1</div>
-                            <div class="how-we-work__item-text">ВЫ ЗВОНИТЕ НАМ</div>
-                        </div>
-                        <img class="how-we-work__item-img" src="img/you_call.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="how-we-work__item">
-                        <img class="how-we-work__item-img hww__item-img--order-2" src="img/you_choose.jpg" alt="" loading="lazy">
-                        <div class="how-we-work__item-info hww__item-info--order-1 honest">
-                            <div class="how-we-work__item-number">2</div>
-                            <div class="how-we-work__item-text">ВЫБИРАЕТЕ УСЛУГУ</div>
-                        </div>
-                    </div>
-                    <div class="how-we-work__item">
-                        <div class="how-we-work__item-info odd">
-                            <div class="how-we-work__item-number">3</div>
-                            <div class="how-we-work__item-text">ОСТАВЛЯЕТЕ АВТО</div>
-                        </div>
-                        <img class="how-we-work__item-img" src="img/you_drop.jpg" alt="" loading="lazy">
-                    </div>
-                    <div class="how-we-work__item">
-                        <img class="how-we-work__item-img hww__item-img--order-2" src="img/you_accept.jpg" alt="" loading="lazy">
-                        <div class="how-we-work__item-info hww__item-info--order-1 honest">
-                            <div class="how-we-work__item-number">4</div>
-                            <div class="how-we-work__item-text">ПРИНИМАЕТЕ РАБОТУ</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="feedback">
-            <div class="container">
-                <h2 class="feedback__title">Мы <span class="yellow">вам</span> перезвоним</h2>
-                <form class="feedback__form" action="php/feedback.php" method="post">
-                    <h4 class="form--name">Имя</h4>
-                    <input name="input--name" class="input--name" type="text" placeholder="Ваше имя" required>
-                    <h4 class="form--phone">Телефон</h4>
-                    <input name="input--phone" class="input--phone" type="tel" value="+7" placeholder="Номер вашего телефона" pattern="[+]{1}[7]{1}[0-9]{10}"
-                    required>
-                    <h4 class="hidden form--message">URL</h4>
-                    <input  name="form--url" class="hidden" type="url" placeholder="Впишите URL">
-                    <input  name="id" type="hidden" value = "2">
-                    <button class="form__btn" type="submit">Отправить</button>
-                </form>
-            </div>
-        </section>
-
         <section class="engines">
             <div class="container engines__container--no-padding engines__container">
                 <div class="engine-items">
@@ -287,6 +233,23 @@
                         </table>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section class="feedback">
+            <div class="container">
+                <h2 class="feedback__title">Мы <span class="yellow">вам</span> перезвоним</h2>
+                <form class="feedback__form" action="php/feedback.php" method="post">
+                    <h4 class="form--name">Имя</h4>
+                    <input name="input--name" class="input--name" type="text" placeholder="Ваше имя" required>
+                    <h4 class="form--phone">Телефон</h4>
+                    <input name="input--phone" class="input--phone" type="tel" value="+7" placeholder="Номер вашего телефона" pattern="[+]{1}[7]{1}[0-9]{10}"
+                    required>
+                    <h4 class="hidden form--message">URL</h4>
+                    <input  name="form--url" class="hidden" type="url" placeholder="Впишите URL">
+                    <input  name="id" type="hidden" value = "2">
+                    <button class="form__btn" type="submit">Отправить</button>
+                </form>
             </div>
         </section>
 
@@ -430,6 +393,43 @@
                 </div> -->
                 <!-- /hidden -->
 
+            </div>
+        </section>
+
+        <section class="how-we-work">
+            <div class="container how-we-work__container">
+                <h2 class="how-we-work__title"><span class="yellow">Как</span> мы работаем</h2>
+                <div class="how-we-work__items">
+
+                    <div class="how-we-work__item">
+                        <div class="how-we-work__item-info odd">
+                            <div class="how-we-work__item-number">1</div>
+                            <div class="how-we-work__item-text">ВЫ ЗВОНИТЕ НАМ</div>
+                        </div>
+                        <img class="how-we-work__item-img" src="img/you_call.jpg" alt="" loading="lazy">
+                    </div>
+                    <div class="how-we-work__item">
+                        <img class="how-we-work__item-img hww__item-img--order-2" src="img/you_choose.jpg" alt="" loading="lazy">
+                        <div class="how-we-work__item-info hww__item-info--order-1 honest">
+                            <div class="how-we-work__item-number">2</div>
+                            <div class="how-we-work__item-text">ВЫБИРАЕТЕ УСЛУГУ</div>
+                        </div>
+                    </div>
+                    <div class="how-we-work__item">
+                        <div class="how-we-work__item-info odd">
+                            <div class="how-we-work__item-number">3</div>
+                            <div class="how-we-work__item-text">ОСТАВЛЯЕТЕ АВТО</div>
+                        </div>
+                        <img class="how-we-work__item-img" src="img/you_drop.jpg" alt="" loading="lazy">
+                    </div>
+                    <div class="how-we-work__item">
+                        <img class="how-we-work__item-img hww__item-img--order-2" src="img/you_accept.jpg" alt="" loading="lazy">
+                        <div class="how-we-work__item-info hww__item-info--order-1 honest">
+                            <div class="how-we-work__item-number">4</div>
+                            <div class="how-we-work__item-text">ПРИНИМАЕТЕ РАБОТУ</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
